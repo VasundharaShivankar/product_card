@@ -26,7 +26,6 @@
     </style>
 </head>
 <body>
-
     <div class="product-card card" >
         <img src="./img/nick.avif" class="image card-img-top" alt="...">
         <div class="card-body">
@@ -36,15 +35,22 @@
           <p>Product Type: Sneakers</p>
           <p>Colorway: Orange Sport Canvas</p>
           <p>Occasion: lifestyle</p>
-          <b>₹7,339.46</b>
+          <b id="price">₹7,339.46</b>
+          <p>Total Amount:  <b>₹7,339.46</b></p>
           <div style="width:100px;display:flex;justify-content: space-between; margin-left:110px">
-        <img src="./img/minus.png" class="icon">
-        <p>1</p>
-        <img src="./img/add.png"  class="icon">
+        <img src="./img/minus.png" class="icon" onclick="decrement()">
+        <p id="quantity">1</p>
+        <img src="./img/add.png"  class="icon" onclick="increment()"> 
         </div>
         </div>
          </div>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+        function decrement(){
+           const itemQuantity=document.getElementById('quantity');
+           itemQuantity.innerText
+        }
+      </script>
 </body>
 </html>
